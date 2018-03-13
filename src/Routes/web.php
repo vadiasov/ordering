@@ -13,7 +13,7 @@
 
 
 // src/Routes/web.php
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web', 'admin']], function () {
     Route::get('/ordering/{config}/{id}', 'Vadiasov\Ordering\Controllers\OrderingController@index');
     Route::post('/ordering/{config}/{id}', 'Vadiasov\Ordering\Controllers\OrderingController@update');
 });

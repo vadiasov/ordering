@@ -74,7 +74,7 @@
                             <div class="box-footer">
                                 <a href="javascript:void(0);" class="reorder_link btn btn-primary pull-right"
                                    id="saveReorder">Reorder rows</a>
-                                <a href="{{ action($backUrl, $parent->id) }}" class="btn btn-default">Back</a>
+                                <a href="{{ action($backUrl, [$parentId2, $parent->id]) }}" class="btn btn-default">Back</a>
                             </div>
                         </div>
                         <!-- /.box-body -->

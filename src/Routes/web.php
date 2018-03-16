@@ -15,5 +15,6 @@
 // src/Routes/web.php
 Route::group(['middleware' => ['web', 'admin']], function () {
     Route::get('/ordering/{config}/{id}', 'Vadiasov\Ordering\Controllers\OrderingController@index');
+    Route::get('/ordering/{config}/{id}/{id2}', 'Vadiasov\Ordering\Controllers\OrderingController@index2');
     Route::post('/ordering/{config}/{id}', 'Vadiasov\Ordering\Controllers\OrderingController@update');
 });

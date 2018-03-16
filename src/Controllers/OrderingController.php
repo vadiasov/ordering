@@ -64,6 +64,7 @@ class OrderingController extends Controller
             'parent',
             'url',
             'backUrl',
+            'parentId',
             'parentId2'
         ));
     }
